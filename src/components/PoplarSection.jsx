@@ -1,0 +1,44 @@
+import React, { useEffect, useState } from 'react';
+
+const PoplarSection = () => {
+    const [services, setServices] = useState([]);
+    useEffect(()=>{
+        fetch('/public/services.json')
+        .then(res => res.json())
+        .then(data => setServices(data))
+        .catch(err => console.log(err))
+    },[])
+
+    return (
+        <div>
+            <div>
+                <h3 className='text-center text-2xl md:text-4xl my-10 font-semibold text-blue-700'>Popular Winter Care Services</h3>
+            </div>
+           <div className='w-full mx-2 md:w-7xl md:mx-auto gap-10 grid grid-cols-1 md:grid-cols-3'>
+            {
+                services.slice(0,6).map(service =>
+                    <div className="card bg-base-100 w-90 mx-auto shadow-sm">
+                    <figure>
+                        <img className='w-full h-[300px] object-cover'
+                            src={service?.image}
+                            alt="Shoes" />
+                    </figure>
+                    <div className="card-body">
+                        <h2 className="card-title">{service.serviceName}</h2>
+                        <div className='flex justify-between my-3 font-semibold'>
+                            <p>Price : {service.price}$ </p>
+                            <p className='text-orange-600'>Rating : {service.rating} </p>
+                        </div>
+                        <div className="card-actions justify-end">
+                            <button className="btn btn-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                )
+            }
+           </div>
+        </div>
+    );
+};
+
+export default PoplarSection;

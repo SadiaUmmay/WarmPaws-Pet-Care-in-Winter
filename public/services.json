@@ -1,0 +1,122 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfits to keep dogs protected from extreme cold.",
+    "image":   "https://i.ibb.co.com/35j26Tc1/petimg1.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Grooming with moisturizing paw balm and winter-safe shampoo for dry skin.",
+    "image": "https://i.ibb.co.com/zV2XHvYC/petimg2.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Pet Winter Checkup Package",
+    "providerName": "HealthyPaws Vet Clinic",
+    "providerEmail": "care@healthypaws.com",
+    "price": 40,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Complete winter health check including coat, paws, hydration, and diet advice.",
+    "image": "https://i.ibb.co.com/LzSzxrMm/petimg3.jpg",
+    "category": "Veterinary"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Warm Bedding Setup",
+    "providerName": "PetNest Comfort",
+    "providerEmail": "support@petnest.com",
+    "price": 20,
+    "rating": 4.6,
+    "slotsAvailable": 6,
+    "description": "Soft insulated bedding to keep pets warm through cold winter nights.",
+    "image": "https://i.ibb.co.com/TxSJpM5m/petimg4.jpg",
+    "category": "Comfort"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Winter Nutrition Plan for Pets",
+    "providerName": "NutriPaws Care",
+    "providerEmail": "contact@nutripaws.com",
+    "price": 15,
+    "rating": 4.8,
+    "slotsAvailable": 7,
+    "description": "Personalized winter diet chart to improve immunity and maintain body warmth.",
+    "image": "https://i.ibb.co.com/h1fvWtzJ/petimg5.jpg",
+    "category": "Nutrition"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Pet Heating Pad Setup",
+    "providerName": "WarmWhiskers",
+    "providerEmail": "info@warmwhiskers.com",
+    "price": 28,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Electric heating pads installed safely to keep pets warm during cold nights.",
+    "image": "https://i.ibb.co.com/8nY9twyz/pic3.jpg",
+    "category": "Accessories"
+  },
+  {
+    "serviceId": 7,
+    "serviceName": "Winter Vaccination & Flu Protection",
+    "providerName": "PetShield Clinic",
+    "providerEmail": "shield@petshield.com",
+    "price": 35,
+    "rating": 4.8,
+    "slotsAvailable": 5,
+    "description": "Seasonal flu shots and winter illness protection for pets.",
+    "image": "https://i.ibb.co.com/qFYpz20F/pic2.jpg",
+    "category": "Veterinary"
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Pet Winter Spa & Moisturizing",
+    "providerName": "SnowSoft Pet Spa",
+    "providerEmail": "spa@snowsoft.com",
+    "price": 22,
+    "rating": 4.7,
+    "slotsAvailable": 3,
+    "description": "Hydrating spa treatment to prevent dry skin, itching, and cracked paws.",
+    "image": "https://i.ibb.co.com/5bWK0rQ/pic1.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 9,
+    "serviceName": "Indoor Winter Exercise Session",
+    "providerName": "FitPaws Activity Center",
+    "providerEmail": "train@fitpaws.com",
+    "price": 18,
+    "rating": 4.6,
+    "slotsAvailable": 4,
+    "description": "Indoor exercise and fun play sessions to keep pets active in winter.",
+    "image": "https://i.ibb.co.com/v4vfdFLR/pic4.jpg",
+    "category": "Training"
+  },
+  {
+    "serviceId": 10,
+    "serviceName": "Pet Winter Safety Home Setup",
+    "providerName": "SafeNest Pets",
+    "providerEmail": "care@safenest.com",
+    "price": 32,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Home inspection and setup for safe heating, draft control, and comfort.",
+    "image": "https://i.ibb.co.com/35j26Tc1/petimg1.jpg",
+    "category": "Safety"
+  }
+]
