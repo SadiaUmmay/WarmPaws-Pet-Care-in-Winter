@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router';
 
 const PoplarSection = () => {
     const [services, setServices] = useState([]);
@@ -30,8 +31,14 @@ const PoplarSection = () => {
                             <p className='text-orange-600'>Rating : {service.rating} </p>
                         </div>
                         <div className="card-actions justify-end">
-                            <button className="btn btn-primary">View Details</button>
-                        </div>
+                               
+                               <Link
+                                   to={`/service-details/${service.id}`}
+                                   className="btn btn-primary"
+                               >
+                                   View Details
+                               </Link>
+                           </div>
                     </div>
                 </div>
                 )

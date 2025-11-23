@@ -57,8 +57,7 @@ const Login = () => {
 
         sendPasswordResetEmail(auth, email)
             .then(() => {
-                toast.success('Password reset email sent! Redirecting to Gmail...');
-                
+                toast.success('Password reset email sent!');
                     window.location.href = "https://mail.google.com";
               
             })

@@ -14,6 +14,7 @@ import AuthProvider from './provider/AuthProvider.jsx'
 import { Toaster } from 'react-hot-toast'
 import PrivateRoute from './provider/PrivateRoute.jsx'
 import Profile from './pages/Profile.jsx'
+import ServiceDetails from './components/ServiceDetails.jsx'
 
 const router = createBrowserRouter([
   {
@@ -32,11 +33,12 @@ const router = createBrowserRouter([
             <Profile></Profile>
           </PrivateRoute>
         ),
-      },]
+      },
+     ]
   },
   {
     path: 'services',
-    Component: Services
+    Component: Services,
   },
   {
     path: 'login',
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
   {
     path: 'register',
     Component: Register
+  },
+  {
+    path: '/service-details/:id',
+    element: (
+      <PrivateRoute>
+        <ServiceDetails />
+      </PrivateRoute>
+    )
   }
 
 ])
