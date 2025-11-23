@@ -11,6 +11,9 @@ import Services from './pages/Services.jsx'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import AuthProvider from './provider/AuthProvider.jsx'
+import { Toaster } from 'react-hot-toast'
+import PrivateRoute from './provider/PrivateRoute.jsx'
+import Profile from './pages/Profile.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,7 +21,18 @@ const router = createBrowserRouter([
     Component: Root,
     children: [
       { index: true, Component: Home },
-      { path: "services", Component: Services }]
+      { path: "services", Component: Services },
+      { path: "login", Component: Login },
+      { path: "register", Component: Register },
+
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>
+          </PrivateRoute>
+        ),
+      },]
   },
   {
     path: 'services',
@@ -38,6 +52,7 @@ createRoot(document.getElementById('root')).render(
 
   <StrictMode>
    <AuthProvider>
+    <Toaster></Toaster>
    <RouterProvider router={router}></RouterProvider>
    </AuthProvider>
   </StrictMode>,

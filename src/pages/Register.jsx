@@ -2,13 +2,17 @@ import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, up
 import React, { useState } from 'react';
 import { auth } from '../firebase/Firebase.config';
 
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
+import { Eye, EyeOff } from 'lucide-react';
+import toast, { ToastBar, Toaster } from 'react-hot-toast';
+
 
 const Register = () => {
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState('')
     const [showPass, setShowPass] = useState(false);
     const [user, setUser] = useState(null);
+    const navigate = useNavigate();
 
     // Google Provider
     const googleProvider = new GoogleAuthProvider();
@@ -17,6 +21,8 @@ const Register = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 console.log("Google user:", result.user);
+                toast.success('Signed Up with Google!');
+                navigate('/');
                 setUser(result.user);
             })
             .catch(error => {
@@ -51,6 +57,8 @@ const Register = () => {
                 console.log('after creation of a new user', result.user)
 
                 setSuccess(true)
+                
+                navigate('/');
                 event.target.reset();
 
                 // update user profile 
@@ -68,9 +76,11 @@ const Register = () => {
                 console.log(error)
                 setError(error.message)
             });
-          
-            
-    }
+        };
+        const toggleHandlePassShow = (event) => {
+            event.preventDefault();
+            setShowPass(!showPass);
+        }
     
     return (
         <div>
@@ -94,10 +104,12 @@ const Register = () => {
                                     <label className="label">Photo Url</label>
                                     <input type="text" name="photo" className="input" placeholder="Photo Url" />
                                     <div className='relative'>
-                                        <label className="label">Password</label>
-                                        <input type={showPass ? 'text' : 'password'} name='password' className="input" placeholder="Password" />
-                                       
-                                    </div>
+                                    <label className="label">Password</label>
+                                    <input type={showPass ? 'text' : 'password'} name='password' className="input" placeholder="Password" />
+                                    <button onClick={toggleHandlePassShow} className=' btn-xs absolute top-7 right-3'>
+                                        {showPass ? <EyeOff></EyeOff> : <Eye></Eye>}
+                                    </button>
+                                </div>
                                     <div>
                                         <label className="label">
                                             <input type="checkbox" name='terms' className="checkbox" />
