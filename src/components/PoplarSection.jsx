@@ -15,7 +15,7 @@ const PoplarSection = () => {
             <div>
                 <h3 className='text-center text-2xl md:text-4xl my-10 font-semibold text-blue-700'>Popular Winter Care Services</h3>
             </div>
-           <div className='w-full mx-2 md:w-7xl md:mx-auto gap-10 grid grid-cols-1 md:grid-cols-3'>
+           <div className='w-full mx-0 md:w-7xl md:mx-auto gap-10 grid grid-cols-1 md:grid-cols-3'>
             {
                 services.slice(0,6).map(service =>
                     <div className="card bg-base-100 w-90 mx-auto shadow-sm">
