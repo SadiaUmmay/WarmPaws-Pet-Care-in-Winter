@@ -1,18 +1,75 @@
-# React + Vite
+# ⭐ WarmPaws – Pet Care in Winter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cozy winter companion platform designed to help pet owners keep their furry friends warm, healthy, and safe during the cold season.  
+Users can explore pet care services, view details, book services, and securely log in to access protected pages.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Link
+👉 **Live URL:** https://warmpaw.netlify.app/ 
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Project Purpose
+WarmPaws helps pet owners easily find and book winter-care services such as grooming, coat fitting, bedding setup, and health checkups — all in one simple interface.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# WarmPaws-Pet-Care-in-Winter
+## 🚀 Key Features
+
+### 🔐 Authentication
+- User login & registration
+- Firebase Email/Password Authentication
+- Private Route protection
+- Redirect to intended page after login
+- Update profile (name + photo)
+
+### 🐾 Winter Pet Care Services
+- Data loaded from `services.json`
+- Service cards with image, price, rating
+- "View Details" button for each service
+
+### 📄 Service Details Page (Protected)
+- Shows full service details:
+  - Name  
+  - Price  
+  - Rating  
+  - Category  
+  - Provider info  
+  - Description
+- Includes a **Book Service** form:
+  - Name & Email fields
+  - “Book Now” button
+  - Displays success toast on submit
+
+### 👤 Profile Page
+- Shows logged-in user information
+- Allows updating name and photo
+
+### ⚡ UX Features
+- Responsive UI (Tailwind + DaisyUI)
+- Smooth toast notifications
+- Clean layout with reusable components
+- Dynamic navbar based on authentication state
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- React.js  
+- Vite  
+- TailwindCSS  
+- DaisyUI  
+
+### Routing
+- **react-router**
+
+### Authentication
+- **Firebase Authentication**
+
+### UI Enhancements
+- **react-hot-toast**  
+- **lucide-react (icons)**  
+
 
