@@ -27,7 +27,7 @@ const Services = () => {
                                 alt={service.serviceName}
                             />
                         </figure>
-                        <div className="card-body">
+                        <div className="card-body shadow-xl">
                             <h2 className="card-title">{service.serviceName}</h2>
                             <div className='flex justify-between my-3 font-semibold'>
                                 <p>Price : {service.price}$</p>

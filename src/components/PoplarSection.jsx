@@ -24,7 +24,7 @@ const PoplarSection = () => {
                             src={service?.image}
                             alt="Shoes" />
                     </figure>
-                    <div className="card-body">
+                    <div className="card-body shadow-xl">
                         <h2 className="card-title">{service.serviceName}</h2>
                         <div className='flex justify-between my-3 font-semibold'>
                             <p>Price : {service.price}$ </p>
@@ -33,7 +33,7 @@ const PoplarSection = () => {
                         <div className="card-actions justify-end">
                                
                                <Link
-                                   to={`/service-details/${service.id}`}
+                                   to={`/service-details/${service.serviceId}`}
                                    className="btn btn-primary"
                                >
                                    View Details

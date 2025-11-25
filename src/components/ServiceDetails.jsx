@@ -3,7 +3,7 @@ import { toast, Toaster } from 'react-hot-toast';
 import { useParams } from 'react-router';
 
 const ServiceDetails = () => {
-  const { id } = useParams(); // get serviceId from URL
+  const { id } = useParams(); 
   const [service, setService] = useState(null);
 
   useEffect(() => {
@@ -18,16 +18,15 @@ const ServiceDetails = () => {
 
   const handleBooking = (e) => {
     e.preventDefault();
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-    toast.success(`Booking successful for ${name}!`);
+  
+    toast.success(`Booking successful !`);
     e.target.reset();
   };
 
-  if (!service) return <p className="text-center mt-10">Loading service details...</p>;
+  if (!service) return <p className="text-center mt-10">Loading service details</p>;
 
   return (
-    <div className="hero bg-base-200 min-h-screen">
+    <div className="hero bg-base-200 py-10">
       <Toaster position="top-right" />
       <div className="hero-content flex-col w-full max-w-3xl">
         <div className="card w-full bg-base-100 shadow-lg">

@@ -38,7 +38,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link className="btn btn-ghost text-xl normal-case" to="/">PetPao</Link>
+        <Link className="btn btn-ghost text-xl normal-case" to="/">WarmPaws</Link>
       </div>
 
       <div className="navbar-center hidden lg:flex">
